@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/Utilidades.css' %}">
+    <title>INDEX</title>
+</head>
+
+<body class="container mt-5 alert alert-success admin-v2">
+    <div class="alert alert- display-1 text-center alert alert-danger administrador">SISTEMA ADMINISTRADOR </div>
+      <div>
+        <h4 class="text-center">DATOS DEL AUTOR</h4>
+            <div class="d-flex shadow colors-shadow">
+                <img class="d-block m-5 m-lg-5" style="height: 20rem;" src="{% static "img/avatar.png" %}" alt="">
+                <!-- <img class="d-block m-5 m-lg-5" style="height: 20rem;" src="{%static "img/avatar.png" %}" alt=""> -->
+                <ul class="shadow colors">
+                    <li class="p-3 m-2" style="color: black; font-size: 1.5rem ; font-family: Arial, Helvetica, sans-serif;">Rut: {{210016678}}</li>
+                    <li class="p-3 m-2" style="color: black; font-size: 1.5rem ; font-family: Arial, Helvetica, sans-serif;">Nombres: {{nombres}}</li>
+                    <li class="p-3 m-2" style="color: black; font-size: 1.5rem ; font-family: Arial, Helvetica, sans-serif;">Correo: {{email}}</li>
+                    <li class="p-3 m-2" style="color: black; font-size: 1.5rem ; font-family: Arial, Helvetica, sans-serif;">Carrera: {{carrera}}</li>
+                    <li class="p-3 m-2" style="color: black; font-size: 1.5rem ; font-family: Arial, Helvetica, sans-serif;">Edad: {{edad}}</li>
+                    <li class="p-3 m-2" style="color: black; font-size: 1.5rem ; font-family: Arial, Helvetica, sans-serif;">Apellidos: {{Apellidos}}</li>
+                </ul>
+            </div>
+      </div>
+
+
+        <div class="text-center colors-shadow">
+            
+            <a href="/listar" class="radius btn-all btn btn-primary float-start m-3 colors">CRUD</a>
+            <a href="/inscritos" class="radius btn-all btn btn-primary float-start m-3 colors">CBW</a>
+            <a href="/ver" class="radius btn-all btn btn-primary float-end m-3 colors">API</a>
+            <a href="/FBW" class="radius btn-all btn btn-primary float-end m-3 colors">FBW</a>
+            <a href="/instituciones" class="radius btn-all btn btn-primary float-middle m-3 colors">INST</a>
+            <a href="/autor" class="radius btn-all btn btn-primary float-middle m-3 colors">AUTOR</a>
+
+        </div>
+
+
+</body>
+
+</html>
